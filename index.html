@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 36 JS</title>
+</head>
+<body>
+    <h2>Login</h2>
+    
+    <form action="">
+        <p class="department">- Department of Finance -</p>
+        <p>
+            <input type="email" id="email" value="email">
+        </p>
+        <p>
+            <input type="text" id="user" value="username">
+        </p>
+        <p>
+            <input type="password" class="password" value="12345">
+        </p>
+        <p>
+            <button type="button" onclick="panggilFungsi();">Jalan</button>
+        </p>
+    </form>
+
+    <script>
+        function panggilFungsi() {
+            console.log(document.getElementById('email'));
+            console.log(document.getElementsByTagName('h2'));
+            console.log(document.getElementsByClassName('password'));
+            console.log(document.querySelector('.department'));
+        }
+    </script>
+</body>
+</html>
